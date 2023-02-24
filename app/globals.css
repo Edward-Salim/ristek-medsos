@@ -1,0 +1,225 @@
+/* Reset */
+/* TODO: px ubah ke rem -> responsive */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: 700;
+}
+
+body {
+  line-height: 1.5;
+  min-height: 100vh;
+}
+
+/* Membuat gambar lebih mudah diatur */
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Membuat form elements lebih mudah diatur */
+input,
+button,
+textarea {
+  font: inherit;
+}
+
+
+/* Styling */
+
+body {
+  position: relative;
+  background: #01162D;
+  color: white;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  margin-inline: auto;
+  max-width: 650px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 55px;
+  padding-top: 25px;
+  margin-bottom: 65px;
+}
+
+nav > * {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+nav > *:visited {
+  color: white;
+}
+
+nav>.ristek-logo {
+  cursor: pointer;
+}
+
+.ristek-logo {
+  height: 57px;
+  margin-right: 27px;
+}
+
+/* !ubah px ke rem nanti */
+.project-title {
+  font-size: 27px;
+  color: #FFFFFF;
+  margin-right: auto;
+  cursor: pointer;
+}
+
+nav>.profile-name {
+  cursor: pointer;
+}
+
+.profile-name {
+  font-size: 18px;
+}
+
+nav>.profile-pic {
+  cursor: pointer;
+}
+
+.profile-pic {
+  height: 50px;
+  border-radius: 28px;
+  aspect-ratio: 1;
+  margin-right: 20px;
+}
+
+.content-container {
+  display: flex;
+  /* parents aka main*/
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.content-container>.greetings {
+  font-size: 41px;
+  line-height: 69px;
+}
+
+.greetings>.account-name {
+  color: #88BFE8;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-block: 35px;
+  gap: 16px;
+}
+
+.textarea {
+  flex-grow: 2;
+  color: white;
+  outline: none;
+  border: 2px solid #88BFE8;
+  box-shadow: 0px 1px 6px #C5E0EB;
+  border-radius: 8px;
+  height: 190px;
+  width: 100%;
+  height: 100vh;
+  max-width: 420px;
+  max-height: 190px;
+  background-color: transparent;
+  padding-inline: 25px;
+  padding-block: 20px;
+  resize: none;
+}
+
+.btn-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: flex-end;
+  line-height: 10px;
+}
+
+.close-friends-btn,
+.post-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 217px;
+  height: 48px;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px #DAEBF3;
+  border-radius: 8px;
+  border: none;
+  display: flex;
+  color: #01162D;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.post-bubble {
+  background: linear-gradient(180deg, #213356 0%, #0C182F 100%);
+  box-shadow: 6.39689px 6.39689px 19.1907px #1D2E4E;
+  border-radius: 25.5876px;
+  width: 100%;
+  height: 160px;
+  padding: 30px 30px 40px 30px;
+  margin-bottom: 35px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.user-info>.profile-pic {
+  height: 42px;
+  margin-right: 15px;
+}
+
+.user-info>.post-date {
+  font-weight: 300;
+  font-size: 12px;
+  margin-inline: 7px auto;
+}
+
+.user-info>.delete-post {
+  cursor: pointer;
+}
+
+.post-text-content {
+  font-size: 25px;
+}

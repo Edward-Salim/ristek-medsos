@@ -1,0 +1,16 @@
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.user-profile>.profile-pic {
+  height: 100px;
+  margin: 0;
+}
+
+.user-desc {
+  font-weight: 300;
+  font-size: 20px;
+  margin-block: 35px;
+}
